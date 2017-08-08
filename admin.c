@@ -1,0 +1,1 @@
+/* call main function of Main.hs and pass port number and channel name */
