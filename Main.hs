@@ -17,7 +17,7 @@ main = withSocketsDo $ do
     forever $ do
         (handle, host, port') <- accept sock
         _ <- printf "Accepted connection from %s: %s\n" host (show port')
-        forkFinally (ServeClient handle server) (\_ -> hClose handle)
+        forkFinally (handleClient handle server) (\_ -> hClose handle)
 
 
 --make connection via ffi to admin.c and get port number and default channelname  
@@ -25,4 +25,4 @@ main = withSocketsDo $ do
 
 
 port :: Int
-port = -- variable portnumber
+port = 1234
