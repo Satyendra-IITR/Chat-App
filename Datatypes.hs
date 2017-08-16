@@ -1,9 +1,9 @@
 module  Datatypes where
 
-type clientname = String
-type channelname = String
+type ClientName = String
+type ChannelName = String
 
 data Message = Notice String
-               | Tell clientname String
-               | Broadcast channelname clientname String
+               | Tell ClientName String
+               | Broadcast ChannelName ClientName String
                | Command String
