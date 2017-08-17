@@ -11,13 +11,13 @@ Purely for learning prupose
  
 Quick setup 
 
-    cabal sandbox init
-    cabal install --only-dependencies
-    cabal run
+    $ cabal sandbox init
+    $ cabal install --only-dependencies
+    $ cabal run
 
 Then in another terminal
 
-     nc localhost 1234
+     $ nc localhost 1234
  
 
 
